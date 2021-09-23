@@ -1,0 +1,62 @@
+
+html {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e0e0e0;
+    color: #171111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 980px;
+    padding: 5px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    text-align: end;
+    font-style: italic;
+    color: #3e30ff;
+}
+
+.address p {
+    margin: 0;
+}
+
+.address span {
+    font-weight: bold;
+}
+
+.address .date {
+    font-style: normal;
+}
+
+.receptor {
+    font-style: italic;
+    text-align: start;
+}
+
+.receptor p {
+    margin: 0;
+}
+
+.receptor span {
+    font-weight: bold;
+}
+
+a {
+    color: #223326;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    font-style: italic;
+}
