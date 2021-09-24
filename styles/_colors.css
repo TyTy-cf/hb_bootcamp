@@ -1,0 +1,29 @@
+
+.red {
+    background-color: red;
+    color: antiquewhite;
+    font-size: 1rem;
+}
+
+.forest-green {
+    background-color: forestgreen;
+    color: antiquewhite;
+    font-size: 1rem;
+}
+
+.darkslateblue {
+    background-color: darkslateblue;
+    color: antiquewhite;
+    font-size: 1rem;
+}
+
+.yellow {
+    background-color: yellow;
+    font-size: 1rem;
+}
+
+.rebeccapurple {
+    background-color: rebeccapurple;
+    color: antiquewhite;
+    font-size: 1rem;
+}

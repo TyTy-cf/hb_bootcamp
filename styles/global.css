@@ -6,14 +6,22 @@ html {
     color: #171111;
 }
 
+body {
+    margin: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
 }
 
-.main-container {
+header, footer {
     width: 100%;
-    max-width: 1072px;
-    padding: 5px 15px;
+    height: 160px;
+    max-height: 160px;
+}
+
+.main-container, .main-container-flex {
+    width: 65%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -21,10 +29,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
 }
 
+.main-container-flex {
+    flex-direction: unset;
+}
+
 @media (max-width: 1100px) {
-    .main-container {
+    .main-container, .main-container-flex  {
         width: unset;
     }
+}
+
+.container-50 {
+    flex: 50%;
+    width: 50%;
 }
 
 p {
@@ -45,3 +62,10 @@ table {
     margin: auto;
     width: 100%;
 }
+
+/* calc est une fonction css, qui permet de faire des calculs entre les différentes unités de mesure */
+/* ici je vaux calculer en px, 100% de la hauteur maximum de l'écran de l'utilisateur - 370 (370 pour les hauteurs des footer et header) */
+.height {
+    height: 45vh;
+}
+
