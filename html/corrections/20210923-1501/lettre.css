@@ -3,6 +3,7 @@
     text-align: end;
     font-style: italic;
     color: #3e30ff;
+    font-size: 1.5rem;
 }
 
 .address p {
@@ -20,6 +21,7 @@
 .receptor {
     font-style: italic;
     text-align: start;
+    font-size: 1.5em;
 }
 
 .receptor p {
@@ -38,4 +40,8 @@ a {
 
 a:hover {
     font-style: italic;
+}
+
+.half-container {
+    width: 50%;
 }
