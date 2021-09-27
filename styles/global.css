@@ -33,6 +33,11 @@ header, footer {
     flex-direction: unset;
 }
 
+.px-3 {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
 @media (max-width: 1100px) {
     .main-container, .main-container-flex  {
         width: unset;
@@ -44,12 +49,17 @@ header, footer {
     width: 50%;
 }
 
+.container-25 {
+    flex: 25%;
+    width: 25%;
+}
+
 p {
     margin: 0.5em;
 }
 
 .mt-3 {
-    margin-top: 1.5em;
+    margin-top: 1.5em !important;
 }
 
 table {
@@ -63,9 +73,23 @@ table {
     width: 100%;
 }
 
+.bloc-center {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.align-start {
+    text-align: start;
+}
+
 /* calc est une fonction css, qui permet de faire des calculs entre les différentes unités de mesure */
 /* ici je vaux calculer en px, 100% de la hauteur maximum de l'écran de l'utilisateur - 370 (370 pour les hauteurs des footer et header) */
 .height {
     height: 45vh;
+}
+
+.height-15 {
+    height: 15vh;
 }
 
