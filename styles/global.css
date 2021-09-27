@@ -44,6 +44,10 @@ header, footer {
     }
 }
 
+.w-100 {
+    width: 100%;
+}
+
 .container-50 {
     flex: 50%;
     width: 50%;

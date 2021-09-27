@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cours formulaire</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="../styles/global.css" rel="stylesheet" type="text/css">
+        <link href="../styles/_colors.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="main-container-flex mt-3">
+                <form method="post" action="lettres.html">
+                    <label for="starter-pokemon" class="w-100 mt-3">Votre pokemon :</label>
+                    <select id="starter-pokemon" name="starter-pokemon" class="w-100">
+                        <option value="bulbizarre">Bulbizarre</option>
+                        <option value="carapuce">Carapuce</option>
+                        <option value="salameche">Salamèche</option>
+                    </select>
+
+                    <label for="nickname" class="w-100">Surnom :</label>
+                    <input type="text" id="nickname" name="nickname-pkmn" required minlength="4" maxlength="16" class="w-100">
+
+                    <button type="submit" class="mt-3">OK</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
