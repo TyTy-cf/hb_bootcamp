@@ -19,3 +19,25 @@ Elle doit comporter :
 Vous styliserez cette page correctement !
 
 
+### 2. Préparer la page de réservation du Business Case
+
+On y accède via un clic sur une card de restaurant depuis la page d'accueil
+
+On reprend les informations de la card du restaurant en ajoutant une description de celui-ci.
+
+En vrai, vous pouvez ajouter des informations complémentaires :
+
+- Un slider/caroussel de photos des différents plats
+- Les horaires d'ouverture
+- Menu / carte (peut-être pas complète ?) => directement en HTML ou PDF à télécharger
+
+Réalisation du formulaire de réservation :
+
+- Nom & prénom
+- Nombre de personnes
+- Horaire + jour de la réservation
+- Numéro de téléphone
+- Intérieur/extérieur (facultatif)
+
+=> La soumission du formulaire ira sur du vide
+
