@@ -3,63 +3,113 @@
     <head>
         <meta charset="UTF-8">
         <title>Image de Pikachu</title>
+        <link href="../styles/boostrap/css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="../styles/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div>
-            <h1>Pikachu est un super Pokémon</h1>
-            <h2>Pikachu est un super Pokémon</h2>
-            <h3>Pikachu est un super Pokémon</h3>
-            <h4>Pikachu est un super Pokémon</h4>
-            <h5>Pikachu est un super Pokémon</h5>
-            <h6>Pikachu est un super Pokémon</h6>
-            <img src="../assets/images/couche_soleil.jpg"
-                 alt="Super couché de soleil"
-            />
-        </div>
+        <div class="container">
+            <!-- On applique un flex sur le bloc -->
+            <div class="row col-12">
+                <!-- Le 1er bloc doit faire 66% de la taille sur un écran lg et il passe à 100% sur un écran md -->
+                <div class="col-lg-9 col-md-12">
+                    <div class="text-center">
+                        <h1>Pikachu est un super Pokémon</h1>
+                        <h2>Pikachu est un super Pokémon</h2>
+                        <h3>Pikachu est un super Pokémon</h3>
+                        <h4>Pikachu est un super Pokémon</h4>
+                        <h5>Pikachu est un super Pokémon</h5>
+                        <h6>Pikachu est un super Pokémon</h6>
+                        <img src="../assets/images/couche_soleil.jpg"
+                             alt="Super couché de soleil"
+                        />
+                        <p class="test-after">Bla bla bla de test</p>
+                    </div>
 
-        <div>
-            <h2>Liste de navigateurs Web :</h2>
-            <ul>
-                <li>
-                    <!-- target="_blank" permet d'ouvrir la page dans un nouvel onglet du navigateur  -->
-                    <a href="https://www.google.com/intl/fr_fr/chrome/" target="_blank">
-                        Google Chrome
-                    </a>
-                </li>
-                <li>Mozilla Firefox</li>
-                <li>Microsoft Edge</li>
-                <li>Safari</li>
-                <li>
-                    <p>Opera</p>
-                </li>
-            </ul>
-        </div>
+                    <div class="text-center d-none d-sm-block">
+                        <h2>Liste de navigateurs Web :</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <!-- target="_blank" permet d'ouvrir la page dans un nouvel onglet du navigateur  -->
+                                <a href="https://www.google.com/intl/fr_fr/chrome/" target="_blank">
+                                    Google Chrome
+                                </a>
+                            </li>
+                            <li>Mozilla Firefox</li>
+                            <li>Microsoft Edge</li>
+                            <li>Safari</li>
+                            <li>
+                                <p>Opera</p>
+                            </li>
+                        </ul>
+                    </div>
 
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Navigateur</th>
-                        <th>URL</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Google Chrome</td>
-                        <td>
-                            <a href="https://www.google.com/intl/fr_fr/chrome/" target="_blank">
-                                Download
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <!-- colspan permet de dire à html que l'élément doit s'afficher sur 2 colonnes  -->
-                        <td colspan="2">Mozilla Firefox</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                    <div class="text-center">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Navigateur</th>
+                                <th>URL</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Google Chrome</td>
+                                <td>
+                                    <a href="https://www.google.com/intl/fr_fr/chrome/" target="_blank">
+                                        Download
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- colspan permet de dire à html que l'élément doit s'afficher sur 2 colonnes  -->
+                                <td>Mozilla Firefox</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <!-- colspan permet de dire à html que l'élément doit s'afficher sur 2 colonnes  -->
+                                <td>Microsoft Edge</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <!-- colspan permet de dire à html que l'élément doit s'afficher sur 2 colonnes  -->
+                                <td>Safari</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <!-- colspan permet de dire à html que l'élément doit s'afficher sur 2 colonnes  -->
+                                <td>Opéra</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
+                    <!-- On applique un flex sur le bloc -->
+                    <div class="row col-12">
+                        <!-- Le 1er bloc doit faire 66% de la taille sur un écran lg et il passe à 100% sur un écran md -->
+                        <div class="col-lg-9 col-md-12 height-15 red">
+
+                        </div>
+                        <!-- Le 1er bloc doit faire 33% de la taille sur un écran lg et il passe à 100% sur un écran md -->
+                        <div class="col-lg-3 col-md-12 row">
+                            <!-- Les blocs ici feront toujours 50%, que l'on soit en tailel lg ou md -->
+                            <div class="col-6 height-15 forest-green">
+
+                            </div>
+                            <div class="col-6 height-15 red">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Le 1er bloc doit faire 33% de la taille sur un écran lg et il passe à 100% sur un écran md -->
+                <div class="col-lg-3 col-md-12 row">
+                    <div class="fixed-top side-nav">
+                        <button class="btn btn-success">COUCOU</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </body>
 </html>

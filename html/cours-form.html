@@ -3,27 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <title>Cours formulaire</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="../styles/global.css" rel="stylesheet" type="text/css">
-        <link href="../styles/_colors.css" rel="stylesheet" type="text/css">
+        <link href="../styles/boostrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="../styles/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="main-container">
-            <div class="main-container-flex mt-3">
-                <form method="post" action="lettres.html">
-                    <label for="starter-pokemon" class="w-100 mt-3">Votre pokemon :</label>
-                    <select id="starter-pokemon" name="starter-pokemon" class="w-100">
-                        <option value="bulbizarre">Bulbizarre</option>
-                        <option value="carapuce">Carapuce</option>
-                        <option value="salameche">Salamèche</option>
-                    </select>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Accueil</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Admin
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Voir les réservations</a></li>
+                                <li><a class="dropdown-item" href="#">Mon compte</a></li>
+                                <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="d-flex">
+                <form method="post" action="lettres.html" class="mt-3 row row-cols-lg-auto g-3 align-items-center mx-auto">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <label for="starter-pokemon" class="pt-1 me-1">Votre pokemon :</label>
+                            <select id="starter-pokemon" name="starter-pokemon" class="form-select">
+                                <option value="bulbizarre">Bulbizarre</option>
+                                <option value="carapuce">Carapuce</option>
+                                <option value="salameche">Salamèche</option>
+                            </select>
+                        </div>
+                    </div>
 
-                    <label for="nickname" class="w-100">Surnom :</label>
-                    <input type="text" id="nickname" name="nickname-pkmn" required minlength="4" maxlength="16" class="w-100">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <label for="nickname"></label>
+                            <input class="form-control" type="text" id="nickname" name="nickname-pkmn" required minlength="4" maxlength="16" placeholder="Nickname">
+                        </div>
+                    </div>
 
-                    <button type="submit" class="mt-3">OK</button>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-danger">OK</button>
+                    </div>
                 </form>
             </div>
         </div>
+        <script src="../styles/boostrap/js/bootstrap.bundle.js"></script>
     </body>
 </html>

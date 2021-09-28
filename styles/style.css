@@ -1,51 +1,113 @@
 
-/* Récupère tous les éléments HTML dont le nom vaut 'pre' ou 'p' */
-pre, p {
-    color: rgb(51, 102, 255);
-    width: 100%;
+/*!* Récupère tous les éléments HTML dont le nom vaut 'pre' ou 'p' *!*/
+/*pre, p {*/
+/*    color: rgb(51, 102, 255);*/
+/*    width: 100%;*/
+/*}*/
+
+/*#main-title {*/
+/*    color: darkred;*/
+/*    padding: 5px 2px;*/
+/*}*/
+
+/*!* Récupère tous les éléments HTML dont l'attribut class (représenté par le '.') vaut "purple" *!*/
+/*.purple {*/
+/*    color: purple;*/
+/*}*/
+
+/*!* Récupère tous les éléments HTML dont l'attribut id (représenté par le '#') vaut "receptor" *!*/
+/*#receptor {*/
+/*    color: darkgreen;*/
+/*}*/
+
+/*!* Sélectionne la balise 'a' dont la valeur du href vaut "index.html" *!*/
+/*a[href="index.html"] {*/
+/*    color: #ff00ff;*/
+/*}*/
+
+/*!* Applique un css lors de l'état 'hover' sur le a[href="index.html"] *!*/
+/*a[href="index.html"]:hover {*/
+/*    color: #004d1a;*/
+/*}*/
+
+/*!* Applique un css sur l'image dont la valeur de l'attribut src vaut "images/couche_soleil.jpg" *!*/
+/*img[src="images/couche_soleil.jpg"] {*/
+/*    width: 100%;*/
+/*    max-height: 640px;*/
+/*}*/
+
+/*!* Applique sur tout le contenu de la balise html la police "Open Sans" sinon "sans-serif" avec une taille de 10px *!*/
+/*html {*/
+/*    font-size: 12px;*/
+/*    font-family: 'Open Sans', sans-serif;*/
+/*}*/
+
+/*h2 {*/
+/*    font-family: sans-serif;*/
+/*}*/
+
+/*pre {*/
+/*    border: 1px solid coral;*/
+/*}*/
+
+.test-after:after {
+    content: " *";
+    color: red;
 }
 
-#main-title {
-    color: darkred;
-    padding: 5px 2px;
+.test-after:before {
+    content: "=> ";
+    color: red;
 }
 
-/* Récupère tous les éléments HTML dont l'attribut class (représenté par le '.') vaut "purple" */
-.purple {
-    color: purple;
+.table {
+    background-color: green;
+    border-color: darkgreen;
+    color: antiquewhite;
 }
 
-/* Récupère tous les éléments HTML dont l'attribut id (représenté par le '#') vaut "receptor" */
-#receptor {
-    color: darkgreen;
+.table > :not(caption) > * > * {
+    color: antiquewhite;
 }
 
-/* Sélectionne la balise 'a' dont la valeur du href vaut "index.html" */
-a[href="index.html"] {
-    color: #ff00ff;
+.height-15 {
+    height: 15vh;
 }
 
-/* Applique un css lors de l'état 'hover' sur le a[href="index.html"] */
-a[href="index.html"]:hover {
-    color: #004d1a;
+.red {
+    background-color: red;
+    color: antiquewhite;
+    font-size: 1rem;
 }
 
-/* Applique un css sur l'image dont la valeur de l'attribut src vaut "images/couche_soleil.jpg" */
-img[src="images/couche_soleil.jpg"] {
-    width: 100%;
-    max-height: 640px;
+.forest-green {
+    background-color: forestgreen;
+    color: antiquewhite;
+    font-size: 1rem;
 }
 
-/* Applique sur tout le contenu de la balise html la police "Open Sans" sinon "sans-serif" avec une taille de 10px */
-html {
-    font-size: 12px;
-    font-family: 'Open Sans', sans-serif;
+.bg-light {
+    background-color: forestgreen !important;
 }
 
-h2 {
-    font-family: sans-serif;
+.navbar-light .navbar-brand {
+    color: antiquewhite;
 }
 
-pre {
-    border: 1px solid coral;
+.navbar-light .navbar-nav .nav-link {
+    color: antiquewhite;
 }
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0dcaf0;
+}
+
+.container-top {
+    margin-top: 5em;
+}
+
+.side-nav {
+    left: unset;
+    right: unset;
+}
+
