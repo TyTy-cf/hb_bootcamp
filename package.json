@@ -1,0 +1,22 @@
+{
+  "name": "projet_hb_bootcamp",
+  "version": "1.0.0",
+  "description": "Projet Web Statique pour HB Bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w styles/scss/ -o styles/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TyTy-cf/hb_bootcamp.git"
+  },
+  "author": "Kevin Tourret",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TyTy-cf/hb_bootcamp/issues"
+  },
+  "homepage": "https://github.com/TyTy-cf/hb_bootcamp#readme",
+  "dependencies": {
+    "node-sass": "npm:null@*"
+  }
+}
