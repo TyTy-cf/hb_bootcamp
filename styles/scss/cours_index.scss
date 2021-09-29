@@ -1,0 +1,13 @@
+
+.test-after {
+
+  &:after {
+    content: " *";
+    color: red;
+  }
+
+  &:before {
+    content: "=> ";
+    color: red;
+  }
+}
