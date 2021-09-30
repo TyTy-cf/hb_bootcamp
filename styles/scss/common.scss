@@ -1,2 +1,28 @@
 
 // Ici vous mettez le css relatif à votre site web global
+
+.bg-light {
+  background-color: $header-background-color !important;
+}
+
+.navbar-light .navbar-brand {
+  color: $header-color;
+}
+
+//.background-bp {
+//  background: black;
+//  opacity: 70%;
+//
+//  &.img-1 {
+//    background-image: url('...');
+//  }
+//
+//  &.img-2 {
+//    background-image: url('...');
+//  }
+//
+//  &.img-3 {
+//    background-image: url('...');
+//  }
+//}
+
