@@ -9,4 +9,17 @@ $background-color: antiquewhite;
 $nav-color: antiquewhite;
 $main-font-size: 16px;
 
-$background-color-lighter: darken($background-color, 15%);
+$background-color-darken-5: darken($background-color, 5%);
+$background-color-darken-10: darken($background-color, 10%);
+$background-color-darken-15: darken($background-color, 15%);
+
+// Palettes de couleurs "Ecole de Voile"
+$primary-background-color: #FFFFFF;
+$secondary-background-color: #025478;
+$card-activities-background-color: #F7F7F7;
+$btn-background-color: #00BBEE;
+$default-font-color: #FFFFFF;
+$header-font-color: #025478;
+$good-deal-infos-font-color: #E19355;
+$cgu-btn-background-color: #B1CAD5;
+

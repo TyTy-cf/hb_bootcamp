@@ -1,0 +1,62 @@
+.logo {
+  width: 100px; }
+
+.main-image {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../../html/exos/20212909-nature/images/sweet-ice-cream-photography-208062-unsplash.jpg);
+  background-size: cover; }
+
+.header {
+  width: 65%;
+  display: block; }
+  .header .navbar-light .navbar-nav .nav-link {
+    color: white; }
+
+.border-top {
+  border-top: 1px solid white;
+  width: 100%; }
+
+.hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../../images/sweet-ice-cream-photography-208062-unsplash.jpg);
+  background-size: cover;
+  padding: 20%; }
+  .hero h1 {
+    color: white;
+    text-transform: uppercase; }
+
+.fond {
+  width: 100%;
+  height: 100vh;
+  background: #dadada;
+  background: linear-gradient(180deg, rgba(218, 218, 218, 0.853379) 0%, white 2%); }
+  .fond .container-images {
+    display: flex;
+    position: absolute;
+    right: -20%;
+    z-index: 10;
+    height: 300px; }
+    .fond .container-images .container-image {
+      height: 100%; }
+    .fond .container-images .container-image-half {
+      height: 46%; }
+    .fond .container-images .img-fluid {
+      width: 100%; }
+  .fond .left-container {
+    position: relative; }
+  .fond .rectangle {
+    height: 250px;
+    background-color: #82AFF3;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%; }
+  .fond .img-right {
+    position: relative;
+    width: 100%;
+    height: 300px; }
+  .fond .img-fluid {
+    height: 100%; }
